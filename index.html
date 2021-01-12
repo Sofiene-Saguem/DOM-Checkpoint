@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black list</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="bcontainer">
+      <img class="img" src="shop.jpg" alt="image" />
+    </section>
+    <section class="tout">
+      <span class="h2"><u>Total</u></span>
+      <span id="totale">0<span>$</span></span>
+    </section>
+    <section id="container">
+      <div class="row row-cols-1 row-cols-md-2">
+        <div class="col mb-4">
+          <div class="card">
+            <img id="shoes" src="nike1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Shoe</h5>
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic checkbox toggle button group"
+              >
+                <input
+                  onclick="total('but1','price1','inp1','totale')"
+                  type="checkbox"
+                  class="btn-check"
+                  id="but1"
+                  autocomplete="off"
+                />
+                <label class="btn btn-primary" for="but1">Add</label>
+              </div>
+              <div class="input-group">
+                <input
+                  type="button"
+                  value="-"
+                  class="button-minus"
+                  data-field="quantity"
+                  onclick="decrease('inp1','price1',120,'but1','totale')"
+                />
+                <input
+                  id="inp1"
+                  type="number"
+                  step="1"
+                  max=""
+                  value="1"
+                  name="quantity"
+                  class="quantity-field"
+                />
+                <input
+                  type="button"
+                  value="+"
+                  class="button-plus"
+                  data-field="quantity"
+                  onclick="increase('inp1','price1',120,'but1','totale')"
+                />
+              </div>
+              <span id="price1">120 <span>$</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img id="shoes" src="nike2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Shoe</h5>
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic checkbox toggle button group"
+              >
+                <input
+                  onclick="total('but2','price2','inp2','totale')"
+                  type="checkbox"
+                  class="btn-check"
+                  id="but2"
+                  autocomplete="off"
+                />
+                <label class="btn btn-danger" for="but2">Add</label>
+              </div>
+
+              <div class="input-group">
+                <input
+                  type="button"
+                  value="-"
+                  class="button-minus"
+                  data-field="quantity"
+                  onclick="decrease('inp2','price2',120,'but2','totale')"
+                />
+                <input
+                  id="inp2"
+                  type="number"
+                  step="1"
+                  max=""
+                  value="1"
+                  name="quantity"
+                  class="quantity-field"
+                />
+                <input
+                  type="button"
+                  value="+"
+                  class="button-plus"
+                  data-field="quantity"
+                  onclick="increase('inp2','price2',120,'but2','totale')"
+                />
+              </div>
+              <span id="price2">120 <span>$</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img id="shoes" src="nike3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Shoe</h5>
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic checkbox toggle button group"
+              >
+                <input
+                  onclick="total('but3','price3','inp3','totale')"
+                  type="checkbox"
+                  class="btn-check"
+                  id="but3"
+                  autocomplete="off"
+                />
+                <label class="btn btn-secondary" for="but3">Add</label>
+              </div>
+
+              <div class="input-group">
+                <input
+                  type="button"
+                  value="-"
+                  class="button-minus"
+                  data-field="quantity"
+                  onclick="decrease('inp3','price3',120,'but3','totale')"
+                />
+                <input
+                  id="inp3"
+                  type="number"
+                  step="1"
+                  max=""
+                  value="1"
+                  name="quantity"
+                  class="quantity-field"
+                />
+                <input
+                  type="button"
+                  value="+"
+                  class="button-plus"
+                  data-field="quantity"
+                  onclick="increase('inp3','price3',120,'but3','totale')"
+                />
+              </div>
+              <span id="price3">120 <span>$</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img
+              id="shoes"
+              src="new balance.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Shoe</h5>
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic checkbox toggle button group"
+              >
+                <input
+                  onclick="total('but4','price4','inp4','totale')"
+                  type="checkbox"
+                  class="btn-check"
+                  id="but4"
+                  autocomplete="off"
+                />
+                <label class="btn btn-dark" for="but4">Add</label>
+              </div>
+
+              <div class="input-group">
+                <input
+                  type="button"
+                  value="-"
+                  class="button-minus"
+                  data-field="quantity"
+                  onclick="decrease('inp4','price4',120,'but4','totale')"
+                />
+                <input
+                  id="inp4"
+                  type="number"
+                  step="1"
+                  max=""
+                  value="1"
+                  name="quantity"
+                  class="quantity-field"
+                />
+                <input
+                  type="button"
+                  value="+"
+                  class="button-plus"
+                  data-field="quantity"
+                  onclick="increase('inp4','price4',120,'but4','totale')"
+                />
+              </div>
+              <span id="price4">120 <span>$</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

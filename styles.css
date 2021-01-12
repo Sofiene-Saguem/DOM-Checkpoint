@@ -1,0 +1,28 @@
+#bcontainer {
+  max-width: 100%;
+  margin: auto;
+  height: 20%;
+}
+.img {
+  max-width: 100%;
+}
+#shoes {
+  height: 390px;
+}
+#container {
+  max-width: 80%;
+  margin: auto;
+  margin-top: 5%;
+}
+.input-group {
+  display: inline;
+  margin-left: 30%;
+}
+.tout {
+  max-width: 80%;
+  margin: auto;
+  padding-top: 5%;
+}
+#total {
+  margin-left: 5px;
+}
